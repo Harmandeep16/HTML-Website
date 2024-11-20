@@ -1,0 +1,329 @@
+.html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #290417;
+  color:#fff;
+
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: orangered;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #290417;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.hero img {
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 20px; 
+}
+
+.About {
+  padding: 40px;
+  background-color: #290417;
+}
+
+.About h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.About p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.projects {
+  padding: 40px;
+  background-color: #290417;
+}
+
+.projects h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.Sources {
+  padding: 40px;
+  background-color: #290417;
+}
+
+.Sources h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.Sources-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Sources-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: calc(33.33% - 20px); 
+}
+
+.Sources-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Sources-card li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Sources-card img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.timeline {
+  padding: 40px;
+  background-color: #290417;
+}
+
+.timeline h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #f00;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  position: relative;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 10px;
+  width: 80%; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 2px solid #f00;
+  height: 40px; 
+}
+
+.blog {
+  padding: 40px;
+  background-color: #290417;
+}
+
+.blog h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+.blog-post {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: calc(33.33% - 20px); 
+  margin-bottom: 20px;
+}
+
+.blog-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; 
+}
+
+.blog-post h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.contact {
+  padding: 40px;
+  background-color: #222;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+h2{
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+h1{
+  text-decoration: underline;
+  text-decoration-color: red;
+}
